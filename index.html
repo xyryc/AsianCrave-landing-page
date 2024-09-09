@@ -180,7 +180,7 @@
               Eggs, Salad, fruits, pasta
             </p>
             <button
-              class="text-2xl font-semibold bg-[#DAE952] py-[14.5px] px-[37.5px] rounded-full hover:bg-slate-200 hover:scale-105 duration-300"
+              class="text-2xl font-inter font-semibold bg-[#DAE952] py-[14.5px] px-[37.5px] rounded-full hover:bg-slate-200 hover:scale-105 duration-300"
             >
               Find for more
             </button>
@@ -196,7 +196,19 @@
 
     <main>
       <!-- special salad section -->
-      <section class="background-green font-poppins py-14">
+      <section class="background-green font-poppins py-14 relative">
+        <img
+          class="absolute -top-48 -left-48 z-10"
+          src="./assets/icons/leaf_background_2.png"
+          alt=""
+        />
+
+        <img
+          class="absolute -bottom-72 right-16"
+          src="./assets/icons/leaf_background_1.png"
+          alt=""
+        />
+
         <div class="container mx-auto">
           <!-- title container -->
           <div class="text-center mt-10 space-y-[18px]">
@@ -218,7 +230,7 @@
           >
             <!-- card 1 -->
             <div
-              class="w-[291px] p-2 text-center rounded-tr-[50px] rounded-bl-[50px] bg-white"
+              class="w-[291px] p-2 text-center rounded-tr-[50px] rounded-bl-[50px] bg-white hover:scale-105 duration-500 ease-in-out shadow-md"
             >
               <!-- image -->
               <div class="relative">
@@ -242,7 +254,7 @@
 
             <!-- card 2 -->
             <div
-              class="w-[291px] p-2 text-center rounded-tr-[50px] rounded-bl-[50px] bg-white"
+              class="w-[291px] p-2 text-center rounded-tr-[50px] rounded-bl-[50px] bg-white hover:scale-105 duration-500 ease-in-out shadow-md"
             >
               <!-- image -->
               <div class="relative">
@@ -266,7 +278,7 @@
 
             <!-- card 3 -->
             <div
-              class="w-[291px] p-2 text-center rounded-tr-[50px] rounded-bl-[50px] bg-white"
+              class="w-[291px] p-2 text-center rounded-tr-[50px] rounded-bl-[50px] bg-white hover:scale-105 duration-500 ease-in-out shadow-md"
             >
               <!-- image -->
               <div class="relative">
@@ -290,7 +302,7 @@
 
             <!-- card 4 -->
             <div
-              class="w-[291px] p-2 text-center rounded-tr-[50px] rounded-bl-[50px] bg-white"
+              class="w-[291px] p-2 text-center rounded-tr-[50px] rounded-bl-[50px] bg-white hover:scale-105 duration-500 ease-in-out shadow-md"
             >
               <!-- image -->
               <div class="relative">
@@ -311,6 +323,45 @@
                 support.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- welcome section -->
+      <section class="background-green font-poppins py-14 relative">
+        <img class="absolute top-[10%] left-[40%]" src="./assets/icons/z_2.png" alt="">
+        <img class="absolute top-[28%] right-[5%] 2xl:right-[10%]" src="./assets/icons/z_2.png" alt="">
+        <img class="absolute bottom-[5%] 2xl:bottom-[8%] right-[10%] 2xl:right-[17%] -z-10" src="./assets/icons/bg_onion.png" alt="">
+        <img class="absolute bottom-[12%] 2xl:bottom-[12%] left-[9%] 2xl:left-[16%] -z-10" src="./assets/icons/bg_circle_small.png" alt="">
+
+        <div
+          class="container mx-auto grid grid-cols-2 justify-center place-items-center text-center pt-16"
+        >
+          <!-- image container -->
+          <div class="drop-shadow-2xl">
+            <img src="./assets/images/ws_salad_monika_grabkowska.png" alt="" />
+          </div>
+
+          <!-- text container -->
+          <div class="w-3/5">
+            <h1 class="text-[40px] font-semibold">
+              Welcome to our<br /><span class="font-bold text-[#DAE952]"
+                >Dhabi</span
+              >
+              Restaurant
+            </h1>
+            <p class="text-xl font-normal mt-8 mb-11">
+              food, substance consisting essentially of protein, carbohydrate,
+              fat, and other nutrients used in the body of an organism to
+              sustain growth and vital processes and to furnish energy. The
+              absorption and utilization of food by the body is fundamental to
+              nutrition and is facilitated by digestion
+            </p>
+            <button
+              class="text-2xl font-semibold font-inter bg-[#DAE952] py-[14.5px] px-[56.5px] rounded-full hover:bg-slate-200 hover:scale-105 duration-300"
+            >
+              Find more
+            </button>
           </div>
         </div>
       </section>
