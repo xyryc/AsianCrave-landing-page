@@ -44,6 +44,12 @@
       };
     </script>
 
+    <!-- Animate.css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- custom css -->
     <style>
       .font-inter {
@@ -88,6 +94,7 @@
       .animate-scroll {
         animation: scroll 40s linear infinite;
       }
+
     </style>
   </head>
   <body>
@@ -130,9 +137,9 @@
         alt=""
       />
 
-      <!-- sidebar sticky -->
+      <!-- sidebar -->
       <div
-        class="absolute top-1/2 right-0 bg-white px-[10px] py-[23px] rounded-l-3xl space-y-2 cursor-pointer shadow-2xl"
+        class="animate__animated animate__slideInUp absolute top-1/2 right-0 bg-white px-[10px] py-[23px] rounded-l-3xl space-y-2 cursor-pointer shadow-2xl"
       >
         <img
           class="hover:scale-105 duration-200"
@@ -153,7 +160,8 @@
 
       <!-- navbar -->
       <nav
-        class="container mx-auto flex items-center justify-between pt-3 mb-[62px]"
+        class="animate__animated animate__slideInDown container mx-auto flex items-center justify-between pt-3 mb-[62px]"
+        style="animation-duration: 1.5s"
       >
         <!-- first -->
         <div class="flex items-center gap-3">
@@ -175,7 +183,7 @@
         <!-- third -->
         <div class="flex items-center gap-[10px]">
           <button
-            class="text-base font-bold bg-[#DAE952] px-[26.5px] py-[10px] rounded-[10px] hover:bg-slate-200 hover:scale-105 duration-300"
+            class="animate__animated animate__pulse animate__infinite text-base font-bold bg-[#DAE952] px-[26.5px] py-[10px] rounded-[10px] hover:bg-slate-200 hover:scale-105 duration-300"
           >
             Special Offer
           </button>
@@ -205,8 +213,10 @@
       <section class="container mx-auto mb-[105px]">
         <div class="flex justify-between items-center gap-[76px]">
           <!-- text container -->
-          <div>
-            <h1 class="text-[78px] font-normal">
+          <div class="animate__animated animate__fadeInDown">
+            <h1
+              class="text-[78px] font-normal animate__animated animate__fadeInDown"
+            >
               All Delicious<br /><span class="font-bold">Asian</span>
             </h1>
             <p class="text-xl font-semibold pb-[50px]">
@@ -220,8 +230,12 @@
           </div>
 
           <!-- image container -->
-          <div class="drop-shadow-2xl">
-            <img src="./assets/images/banner_image_salad.png" alt="Salad" />
+          <div class="drop-shadow-2xl overflow-hidden">
+            <img
+              class="animate__animated animate__fadeInRight"
+              src="./assets/images/banner_image_salad.png"
+              alt="Salad"
+            />
           </div>
         </div>
       </section>
@@ -719,7 +733,7 @@
 
 <!-- javascript -->
 <script>
-  // sponsors
+  // horizontal scroll
   const menu = document.querySelector(".animate-scroll");
 
   menu.addEventListener("mouseover", () => {
